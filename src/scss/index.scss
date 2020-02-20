@@ -1,0 +1,32 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "sections/_button";
+@import "sections/_footer";
+@import "sections/_for-nav-bar";
+@import "sections/_main";
+
+body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.clearfix {
+  content: ' ';
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
