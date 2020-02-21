@@ -1,10 +1,11 @@
 @import "fonts";
 @import "mixins";
 @import "variables";
-@import "sections/_button";
+@import "sections/burger-button";
 @import "sections/_footer";
-@import "sections/_for-nav-bar";
-@import "sections/_main";
+@import "sections/header";
+@import "sections/main-content";
+@import "sections/about-app";
 
 body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
   margin: 0;
@@ -18,15 +19,13 @@ html body {
   min-width: 320px;
 }
 
-.clearfix {
-  content: ' ';
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+}
+
+.fork-offers{
+  max-width: 1200px;
+  margin: 0 auto;
 }

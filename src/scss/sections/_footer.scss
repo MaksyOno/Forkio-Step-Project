@@ -1,0 +1,155 @@
+.fork-pricing {
+  background: url("../img/Footer-layer.png") no-repeat;
+  background-size: cover;
+  padding: 30px 10px 77px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  color: #fff;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.fork-offers-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fork-offers-option:nth-child(3) {
+  width: 25%;
+}
+
+.fork-offers-option {
+  display: flex;
+  flex-direction: column;
+  margin-top: 122px;
+  background-color: rgba(255, 255, 255, 0.11);
+  height: 457px;
+  width: 21.5%;
+  &-info {
+    position: relative;
+  }
+  &-name {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 34px;
+    background-color: rgba(255, 255, 255, 0.06);
+    text-transform: uppercase;
+  }
+  &-price {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 32px;
+
+  }
+  &-term {
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    color: #8e8d8b;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+  }
+  &-services {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  &-button {
+    display: block;
+    position: absolute;
+    top: 280px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 160px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+  }
+  &-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(127, 109, 120)
+  }
+}
+
+.biggest-item {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 560px;
+  margin-top: 71px;
+}
+
+.biggest-item-price-button {
+  margin-top: 82px;
+  display: block;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 160px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.biggest-item-price-button:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(127, 109, 120)
+}
+
+.violet-line {
+  border: transparent;
+  background-color: #8d81ac;
+  height: 5px;
+  width: 60px;
+  margin-top: 39px;
+  margin-bottom: 31px;
+}
+
+.biggest-price {
+  font-size: 82px;
+}
+
+.price-color {
+  font-weight: 700;
+}
+
+.second-option-services {
+  padding: 46px 31px 34px 32px
+}
+
+.third-item-services {
+
+  padding-top: 51px;
+  padding-bottom: 43px;
+}
+
+.fourth-item-services {
+  padding: 47px 51px 33px 50px;
+}
