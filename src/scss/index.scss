@@ -24,7 +24,7 @@ html body {
 .container {
   margin: 0 auto;
   width: 100%;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 .fork-offers{
@@ -239,18 +239,60 @@ html body {
 //SECTION Here is what you get START
 @media (max-width: 480px) {
   .menu-btn{
-    display: flex;
     position: relative;
+    display: flex;
+  }
+  .header__logo{
+    margin-left: 0;
+  }
+  .header__content{
+    padding: 31px 16px;
+    justify-content: center;
+  }
+  .header__btn{
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .logo-text{
+    display: none;
   }
   .main__menu{
     position: absolute;
     flex-direction: column;
     width: 290px;
-    align-items: center;
     background-color: #333333;
+    z-index: 10;
+    bottom: -340px;
   }
   .main__menu__item{
-    text-align: center;
+    text-align: left;
+    padding-top: 31px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #3B3B3B;
+  }
+  .main__menu__item a{
+    padding-left: 24px;
+    color: #fff;
+    border-left: 8px solid #333333;
+  }
+  .main__menu__item a:hover{
+    color: #8D81AC;
+    border-left: 8px solid #8d81ac;
+  }
+  .forkio-statistics__heading{
+    font-size: 19px;
+    line-height: 60px;
+  }
+  .download-btn__title{
+    width: 290px;
+  }
+  .statistic-links{
+    width: 320px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .statistic-links__item{
+    width: 50%;
   }
   .advantages {
     width: 100%;
@@ -265,9 +307,6 @@ html body {
     }
     &-item{
       margin-bottom: 34px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      align-items: center;
       display: block;
     }
 
@@ -275,12 +314,9 @@ html body {
       font-size: 35px;
       color: #8d81ac;
       opacity: 1;
-      text-align: left;
       font-weight: 700;
-      display: block;
-      justify-content: center;
       padding-bottom: 45px;
-      margin-left: 22px;
+      text-align: center;
 
       &-second{
         padding-left: 50px;
@@ -289,11 +325,14 @@ html body {
     &-page{
       display: block;
       &-column {
-        width: 85%;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
       }
     }
 
     &-item-container {
+      width: 100%;
       &-strong {
         font-size: 20px;
         font-weight: 400;
@@ -308,12 +347,12 @@ html body {
         font-weight: 400;
         color: #848e97;
         line-height: 21px;
-        width: 100%;
         text-align: center;
+        width: 100%;
       }
       &-img{
         padding-bottom: 22px;
-        margin-left: 100px;
+        margin: 0 auto;
       }
     }
     &-heading{
@@ -375,6 +414,15 @@ html body {
       margin-top: 11px;
       display: inline-flex;
     }
+  }
+  .fork-offers-options{
+    flex-direction: column;
+  }
+  .fork-offers-option{
+    width: 80%;
+  }
+  .fork-offers-option:nth-child(3){
+    width: 85%;
   }
 }
 //SECTION People Are Talking About Fork END
