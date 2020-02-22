@@ -16,16 +16,365 @@ body, p, ul, li, h1, h2, h3, h4, h5, h6, a {
 
 html body {
   overflow-x: hidden;
+  max-width: 1200px;
   min-width: 320px;
+  margin: 0 auto;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .fork-offers{
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media all and (max-width: 992px) {
+  .header__content {
+    padding: 22px 20px 61px 20px;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  .header__flex-wrapper{
+      justify-content: flex-end;
+    }
+  .main__menu{
+    width: 75%;
+    position: absolute;
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 22px;
+  }
+  .main__menu__item{
+    margin-right: 0;
+  }
+  .download-btn{
+    bottom: -62px;
+  }
+  .advantages{
+    padding-top: 41px;
+  }
+  .advantages-heading{
+    display: none;
+  }
+  .advantages-none-heading{
+    display: flex;
+    color: #8D81AC;
+    opacity: 1;
+    text-align: left;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 45px;
+    font-size: 31px;
+  }
+  .advantages-page{
+    flex-direction: column;
+  }
+  .advantages-item-container{
+    width: 68%;
+    text-align: left;
+  }
+  .advantages-page-column{
+    text-align: center;
+    width: 100%;
+  }
+  .advertising-section{
+    width: 50%;
+  }
+  .advertising-text{
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 315px;
+  }
+  .advertising-last-text{
+    width: 674px;
+  }
+  .fork-offers-options{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .fork-offers-option{
+    margin-top: 42px;
+    width: 34.5%;
+  }
+  .fork-offers-option-name{
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .fork-offers-option:nth-child(3) {
+    width: 40%;
+  }
+
+  .advantages {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 41px;
+    background: #f4f4f4;
+    overflow: hidden;
+
+
+    &-none-heading {
+      font-size: 31px;
+      color: #8d81ac;
+      opacity: 1;
+      text-align: left;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 45px;
+    }
+
+    &-page {
+      display: block;
+
+      &-column {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        padding-left: 23px;
+      }
+    }
+
+    &-item-container {
+      &-strong {
+        font-size: 20px;
+        font-weight: 400;
+        color: #323232;
+      }
+
+      &-text {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #848e97;
+        line-height: 21px;
+        width: 146%;
+      }
+    }
+
+    &-heading {
+      display: none;
+    }
+  }
+  //SECTION Here is what you get END
+  //SECTION People Are Talking About Fork START
+  .advertising {
+    background: url("../img/testmonials.png") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 98px 10px 49px;
+
+    &-heading {
+      font-size: 50px;
+      color: #fff;
+    }
+
+    &-all-img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-section {
+      width: 48%;
+      margin-top: 92px;
+    }
+
+    &-logo {
+      height: 45px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 33px;
+    }
+
+    &-last-text {
+      padding-top: 89px;
+      width: 83%;
+      color: #a291a5;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.8;
+      margin: 0 auto;
+    }
+
+    &-last-text:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #645766;
+      opacity: 1;
+      margin-top: 11px;
+      display: inline-flex;
+    }
+  }
+}
+//SECTION People Are Talking About Fork END
+
+//Main content media
+@media all and (max-width: 650px){
+  .advertising-text{
+    width: 227px;
+  }
+}
+@media all and (max-width: 615px) {
+  .main__menu {
+    width: 85%;
+  }
+}
+
+//SECTION Here is what you get START
+@media (max-width: 480px) {
+  .menu-btn{
+    display: flex;
+    position: relative;
+  }
+  .main__menu{
+    position: absolute;
+    flex-direction: column;
+    width: 290px;
+    align-items: center;
+    background-color: #333333;
+  }
+  .main__menu__item{
+    text-align: center;
+  }
+  .advantages {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 41px;
+    background: #f4f4f4;
+    overflow: hidden;
+
+    &-big-img{
+      max-width: 716px;
+      max-height: 381px;
+    }
+    &-item{
+      margin-bottom: 34px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      align-items: center;
+      display: block;
+    }
+
+    &-none-heading {
+      font-size: 35px;
+      color: #8d81ac;
+      opacity: 1;
+      text-align: left;
+      font-weight: 700;
+      display: block;
+      justify-content: center;
+      padding-bottom: 45px;
+      margin-left: 22px;
+
+      &-second{
+        padding-left: 50px;
+      }
+    }
+    &-page{
+      display: block;
+      &-column {
+        width: 85%;
+      }
+    }
+
+    &-item-container {
+      &-strong {
+        font-size: 20px;
+        font-weight: 400;
+        color: #323232;
+        text-align: center;
+        display: block;
+      }
+
+      &-text {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #848e97;
+        line-height: 21px;
+        width: 100%;
+        text-align: center;
+      }
+      &-img{
+        padding-bottom: 22px;
+        margin-left: 100px;
+      }
+    }
+    &-heading{
+      display: none;
+    }
+  }
+  //SECTION Here is what you get END
+  //SECTION People Are Talking About Fork START
+  .advertising {
+    background: url("../img/testmonials.png") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 98px 10px 49px;
+
+
+    &-heading {
+      font-size: 45px;
+      color: #fff;
+    }
+
+    &-all-img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-section {
+      width: 95%;
+      margin-top: 37px;
+    }
+
+    &-logo {
+      height: 45px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+      text-align: center;
+
+    }
+
+    &-last-text {
+      display: none;
+    }
+
+    &-thin-line{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #645766;
+      opacity: 1;
+      margin-top: 11px;
+      display: inline-flex;
+    }
+  }
+}
+//SECTION People Are Talking About Fork END
