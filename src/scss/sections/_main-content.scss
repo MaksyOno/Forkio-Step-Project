@@ -1,0 +1,128 @@
+//SECTION Here is what you get START
+.advantages {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 33px;
+  background: #f4f4f4;
+  overflow: hidden;
+
+  &-none-heading {
+    display: none;
+  }
+  &-page{
+    display: flex;
+    &-column {
+      flex: 0 0 50%;
+      width: 50%;
+      padding-left: 30px;
+    }
+  }
+
+  &-big-img {
+    padding-right: 18px;
+    max-width: 977px;
+    max-height: 519px;
+  }
+
+  &-item {
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+  }
+  &-item-container-img {
+    width: 111px;
+    margin-right: 23px;
+  }
+  &-item-container {
+    width: 365px;
+
+    &-strong {
+      font-size: 16px;
+      font-weight: 400;
+      color: #323232;
+    }
+
+    &-text {
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #848e97;
+      line-height: 21px;
+    }
+  }
+  &-heading{
+    font-size: 35px;
+    color: #8D81AC;
+    opacity: 1;
+    text-align: left;
+    font-weight: 700;
+  }
+}
+
+//SECTION Here is what you get END
+
+//SECTION People Are Talking About Fork START
+.advertising {
+  margin: 0 auto;
+  background: url("../img/testmonials.png") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 98px 10px 49px;
+  max-width: 1200px;
+
+  &-heading {
+    font-size: 35px;
+    color: #fff;
+  }
+
+  &-all-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-section {
+    width: 30%;
+    margin-top: 92px;
+  }
+
+  &-logo {
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 33px;
+  }
+
+  &-last-text {
+    padding-top: 89px;
+    width: 857px;
+    color: #a291a5;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+    margin: 0 auto;
+  }
+
+  &-last-text:after {
+    content: "";
+    width: 780px;
+    height: 2px;
+    background-color: #645766;
+    opacity: 1;
+    margin-top: 11px;
+    display: inline-flex;
+  }
+}
+//SECTION People Are Talking About Fork END
+//SECTION Here is what you get START
