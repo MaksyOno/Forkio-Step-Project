@@ -1,3 +1,6 @@
+@import "../mixins";
+@import "../variables";
+
 .about__forkio{
 
   position: relative;
@@ -13,24 +16,27 @@
 
   &__title{
     color: #ffffff;
-    font-size: 82px;
+    font-size: 60px;
     font-weight: 700;
-    line-height: 1em;
+    line-height: 77px;
+    font-family: $mBold;
   }
 
   &__slogan{
     margin-top: 18px;
     color: #8d81ac;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1em;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: $lRegular;
   }
   &__version{
     margin-top: 18px;
     color: #848e97;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 12px;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: $mRegular;
   }
 }
 .forkio-statistics__content{
@@ -42,18 +48,18 @@
 
   &__heading{
     color: #635c73;
-    font-size: 54px;
-    font-weight: 700;
+    font-size: 40px;
     text-transform: uppercase;
     line-height: 40px;
+    font-family: $mBold;
   }
   &__description{
-    margin-top: 39px;
+    margin: 38px auto 36px auto;
     color: #323232;
+    font-family: $lRegular;
     font-size: 19px;
-    font-weight: 400;
     line-height: 30px;
-    margin-bottom: 36px;
+    width: 77.5%;
   }
 }
 
@@ -85,8 +91,10 @@
 .download-btn__info{
   margin-top: 19px;
   color: #848e97;
+  font-family: $mRegular;
   font-size: 14px;
-  font-weight: 400;
+  line-height: 14px;
+
 }
 
 .statistic-links{
@@ -103,7 +111,7 @@
     float: left;
     text-decoration: none;
     vertical-align: middle;
-    border-radius: 0.25em 0px 0px 0.25em;
+    border-radius: 4px 0 0 4px;
     line-height: 20px;
     font-weight: 900;
   }

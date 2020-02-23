@@ -1,18 +1,17 @@
+@import "../mixins";
+@import "../variables";
+
 .header{
   background-color: #27262A;
 
   &__flex-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    @include flex-between;
   }
 
   &__content{
-    display: flex;
-    align-items: center;
+    @include flex-between;
     position: relative;
-    justify-content: space-between;
-    padding: 29px 90px 30px;
+    padding: 29px 40px 30px;
   }
 
   &__btn{
@@ -47,9 +46,7 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  margin-left: 90px;
+  @include flex-center;
 
   &-logo-img {
     display: inline-block;
@@ -67,12 +64,12 @@
     text-transform: uppercase;
     margin-left: 17px;
     text-decoration: none;
+    font-family: $lBold;
   }
 }
 
 .main__menu {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   position: relative;
   width: 85%;
 
@@ -81,7 +78,7 @@
   font-size: 16px;
   line-height: 14px;
   text-decoration: none;
-  font-family: MontserratBold;
+  font-family: $mBold;
   text-align: left;
   }
   &__item{

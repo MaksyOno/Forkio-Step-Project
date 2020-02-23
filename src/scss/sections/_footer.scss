@@ -1,7 +1,10 @@
+@import "../mixins";
+@import "../variables";
+
 .fork-pricing {
   background: url("../img/Footer-layer.png") no-repeat;
   background-size: cover;
-  padding: 0 10px 77px;
+  padding: 73px 10px 97px;
   text-align: center;
   max-width: 1200px;
 }
@@ -9,13 +12,13 @@
 .pricing-title {
   color: #fff;
   font-size: 35px;
-  line-height: 50px;
+  line-height: 46px;
+  font-family: $mBold;
+
 }
 
 .fork-offers-options {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex-wrap-between;
   width: 100%;
 }
 
@@ -24,8 +27,7 @@
 }
 
 .fork-offers-option {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   margin-top: 122px;
   background-color: rgba(255, 255, 255, 0.11);
   height: 457px;
@@ -34,11 +36,10 @@
     position: relative;
   }
   &-name {
-    font-family: Montserrat, sans-serif;
+    font-family: $mRegular;
     color: #ffffff;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 17px;
     text-align: center;
     padding-top: 46px;
     padding-bottom: 34px;
@@ -46,28 +47,27 @@
     text-transform: uppercase;
   }
   &-price {
-    font-family: Montserrat, sans-serif;
+    font-family: $mBold;
     color: #ffffff;
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 57px;
+    line-height: 57px;
     text-align: center;
     margin-top: 32px;
 
   }
   &-term {
-    margin-top: 10px;
-    font-family: Montserrat, sans-serif;
+    margin-top: 24px;
+    font-family: $mRegular;
     color: #8e8d8b;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.80196078431372547;
     text-transform: uppercase;
 
   }
   &-services {
-    font-family: Montserrat, sans-serif;
+    font-family: $mRegular;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 400;
     line-height: 22px;
   }
   &-button {
@@ -75,17 +75,16 @@
     position: absolute;
     top: 280px;
     text-align: center;
-    padding-top: 11px;
-    padding-bottom: 12px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgba(255, 255, 255, 0.15);
     width: 160px;
     margin-left: 50%;
     transform: translateX(-50%);
     border-radius: 100px;
-    font-family: Montserrat;
+    font-family: $mRegular;
     color: #ffffff;
     font-size: 15px;
-    font-weight: 400;
     text-transform: uppercase;
 
   }
@@ -105,10 +104,10 @@
   margin-top: 82px;
   display: block;
   text-align: center;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
   background-color: rgba(255, 255, 255, 0.15);
-  width: 160px;
+  width: 190px;
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 100px;
@@ -116,6 +115,7 @@
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: $mRegular;
 }
 .biggest-item-price-button:hover{
   background-color: rgba(255, 255, 255, 0.7);
@@ -127,16 +127,13 @@
   background-color: #8d81ac;
   height: 5px;
   width: 60px;
-  margin-top: 39px;
-  margin-bottom: 31px;
+  margin-top: 49px;
+  margin-bottom: 41px;
 }
 
 .biggest-price {
-  font-size: 82px;
-}
-
-.price-color {
-  font-weight: 700;
+  font-size: 78px;
+  line-height: 78px;
 }
 
 .second-option-services {

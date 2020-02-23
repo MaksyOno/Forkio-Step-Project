@@ -18,20 +18,22 @@ html body {
   overflow-x: hidden;
   max-width: 1200px;
   min-width: 320px;
-  margin: 0 auto;
+  margin: $marginCenter;
 }
 
 .container {
-  margin: 0 auto;
+  margin: $marginCenter;
   width: 100%;
-  //overflow-x: hidden;
 }
 
 .fork-offers{
   max-width: 1200px;
-  margin: 0 auto;
+  margin: $marginCenter;
 }
-
+.btn{
+  font-family: $mBold;
+}
+//from 481 to 992
 @media all and (max-width: 992px) {
   .header__content {
     padding: 22px 20px 61px 20px;
@@ -39,9 +41,6 @@ html body {
   .logo{
     margin-left: 15px;
   }
-  .header__flex-wrapper{
-      justify-content: flex-end;
-    }
   .main__menu{
     width: 75%;
     position: absolute;
@@ -56,38 +55,43 @@ html body {
   .download-btn{
     bottom: -62px;
   }
-  .advantages{
+  .advantages {
     padding-top: 41px;
-  }
-  .advantages-heading{
-    display: none;
-  }
-  .advantages-none-heading{
-    display: flex;
-    color: #8D81AC;
-    opacity: 1;
-    text-align: left;
-    font-weight: 700;
-    justify-content: center;
-    margin-bottom: 45px;
-    font-size: 31px;
-  }
-  .advantages-page{
-    flex-direction: column;
-  }
-  .advantages-item-container{
-    width: 68%;
-    text-align: left;
-  }
-  .advantages-page-column{
-    text-align: center;
-    width: 100%;
+
+    &-heading {
+      display: none;
+    }
+
+    &-none-heading {
+      @include flex-center;
+      color: #8D81AC;
+      opacity: 1;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 45px;
+      font-size: 31px;
+      font-family: $mBold;
+    }
+
+    &-page {
+      flex-direction: column;
+    }
+
+    &-item-container {
+      width: 68%;
+      text-align: left;
+    }
+
+    &-page-column {
+      text-align: center;
+      width: 100%;
+    }
   }
   .advertising-section{
     width: 50%;
   }
   .advertising-text{
-    margin: 0 auto;
+    margin: $marginCenter;
     padding-top: 25px;
     width: 315px;
   }
@@ -109,11 +113,18 @@ html body {
   .fork-offers-option:nth-child(3) {
     width: 40%;
   }
+  .forkio-statistics__heading{
+    font-size: 31px;
+  }
+  .forkio-statistics__description{
+    font-size: 15px;
+    width: 87%;
+  }
 
   .advantages {
     width: 100%;
-    margin: 0 auto;
-    padding-top: 41px;
+    margin: $marginCenter;
+    padding-top: 0;
     background: #f4f4f4;
     overflow: hidden;
 
@@ -124,9 +135,11 @@ html body {
       opacity: 1;
       text-align: left;
       font-weight: 700;
-      display: flex;
-      justify-content: center;
+      @include flex-center;
       padding-bottom: 45px;
+    }
+    &-item{
+      justify-content: center;
     }
 
     &-page {
@@ -135,7 +148,8 @@ html body {
       &-column {
         -webkit-box-flex: 0;
         max-width: 100%;
-        padding-left: 23px;
+        padding-top: 81px;
+        padding-left: 0;
       }
     }
 
@@ -152,7 +166,7 @@ html body {
         font-weight: 400;
         color: #848e97;
         line-height: 21px;
-        width: 146%;
+        width: unset;
       }
     }
 
@@ -169,14 +183,12 @@ html body {
     padding: 98px 10px 49px;
 
     &-heading {
-      font-size: 50px;
+      font-size: 31px;
       color: #fff;
     }
 
     &-all-img {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      @include flex-wrap-between;
     }
 
     &-section {
@@ -186,9 +198,7 @@ html body {
 
     &-logo {
       height: 45px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      @include flex-center;
     }
 
     &-text {
@@ -222,6 +232,19 @@ html body {
     }
   }
 }
+@media all and (max-width: 516px) {
+  .advertising-heading{
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 626px) {
+  .fork-offers-option-services{
+    font-size: 12px;
+  }
+  .biggest-item-price-button{
+    width: 175px;
+  }
+}
 //SECTION People Are Talking About Fork END
 
 //Main content media
@@ -235,6 +258,9 @@ html body {
     width: 85%;
   }
 }
+
+
+//from 320 to 480
 
 //SECTION Here is what you get START
 @media (max-width: 480px) {
@@ -256,48 +282,63 @@ html body {
   .logo-text{
     display: none;
   }
-  .main__menu{
+  .main__menu {
     position: absolute;
     flex-direction: column;
     width: 290px;
     background-color: #333333;
     z-index: 10;
     bottom: -340px;
-  }
-  .main__menu__item{
-    text-align: left;
-    padding-top: 31px;
-    padding-bottom: 36px;
-    border-bottom: 2px solid #3B3B3B;
-  }
-  .main__menu__item a{
-    padding-left: 24px;
-    color: #fff;
-    border-left: 8px solid #333333;
-  }
-  .main__menu__item a:hover{
-    color: #8D81AC;
-    border-left: 8px solid #8d81ac;
+    display: none;
+
+    &__item {
+      text-align: left;
+      padding-top: 31px;
+      padding-bottom: 36px;
+      border-bottom: 2px solid #3B3B3B;
+    }
+
+    &__item a {
+      padding-left: 24px;
+      color: #fff;
+      border-left: 8px solid #333333;
+    }
+
+    &__item a:hover {
+      color: #8D81AC;
+      border-left: 8px solid #8d81ac;
+    }
   }
   .forkio-statistics__heading{
     font-size: 19px;
-    line-height: 60px;
+    line-height: 35px;
+    width: 236px;
+    margin: $marginCenter;
+  }
+  .forkio-statistics__description{
+    margin-top: 23px;
   }
   .download-btn__title{
     width: 290px;
   }
-  .statistic-links{
+  .statistic-links {
     width: 320px;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .statistic-links__item{
-    width: 50%;
+
+    &__item {
+      width: unset;
+      margin-right: 15px;
+    }
+
+    &__item:nth-child(1) {
+      margin-bottom: 15px;
+    }
   }
   .advantages {
     width: 100%;
-    margin: 0 auto;
-    padding-top: 41px;
+    margin: $marginCenter;
+    padding-top: 0;
     background: #f4f4f4;
     overflow: hidden;
 
@@ -315,7 +356,8 @@ html body {
       color: #8d81ac;
       opacity: 1;
       font-weight: 700;
-      padding-bottom: 45px;
+      padding-bottom: 34px;
+      margin-bottom: 0;
       text-align: center;
 
       &-second{
@@ -328,13 +370,14 @@ html body {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
+        padding-top: 34px;
       }
     }
 
     &-item-container {
       width: 100%;
       &-strong {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 400;
         color: #323232;
         text-align: center;
@@ -352,7 +395,7 @@ html body {
       }
       &-img{
         padding-bottom: 22px;
-        margin: 0 auto;
+        margin: $marginCenter;
       }
     }
     &-heading{
@@ -365,18 +408,16 @@ html body {
     background: url("../img/testmonials.png") no-repeat center;
     background-size: cover;
     text-align: center;
-    padding: 98px 10px 49px;
+    padding: 61px 10px 49px;
 
 
     &-heading {
-      font-size: 45px;
+      font-size: 26px;
       color: #fff;
     }
 
     &-all-img {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      @include flex-wrap-between;
     }
 
     &-section {
@@ -386,9 +427,7 @@ html body {
 
     &-logo {
       height: 45px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      @include flex-center;
     }
 
     &-text {
@@ -414,6 +453,9 @@ html body {
       margin-top: 11px;
       display: inline-flex;
     }
+  }
+  .pricing-title{
+    font-size: 23px;
   }
   .fork-offers-options{
     flex-direction: column;
